@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard HM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Contoh Form Input -->
+    <div>
+        <input type="text" id="inputNama" placeholder="Masukkan Nama">
+        <button id="btnSimpan">Upload Data</button>
+    </div>
+
+    <!-- URUTAN SCRIPT YANG BENAR -->
+    
+    <!-- 1. Konfigurasi (Opsional dimuat pertama) -->
+    <script type="module" src="js/firebase.js"></script>
+
+    <!-- 2. Logika Aplikasi -->
+    <script type="module" src="js/dashboard.js"></script>
+
+    <!-- 3. Fitur Peta -->
+    <script type="module" src="js/map.js"></script>
+
+</body>
+</html>
