@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem HM - Utama</title>
+    
+    <!-- Memanggil CSS dari folder css/ sesuai struktur zip -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Selamat Datang di Sistem HM</h1>
+        
+        <!-- Contoh area input untuk mengetes upload data -->
+        <div id="upload-section">
+            <h3>Input Data Baru</h3>
+            <input type="text" id="inputNama" placeholder="Masukkan nama data...">
+            <button id="btnSimpan">Kirim ke Firebase</button>
+        </div>
+
+        <hr>
+        
+        <nav>
+            <p>Navigasi Halaman:</p>
+            <a href="dashboard.html">Buka Dashboard</a>
+        </nav>
+    </div>
+
+    <!-- 
+      URUTAN PEMANGGILAN SCRIPT (PENTING!):
+      Gunakan type="module" untuk mengatasi error SyntaxError yang kamu alami.
+    -->
+
+    <!-- 1. Panggil konfigurasi Firebase dahulu -->
+    <script type="module" src="js/firebase.js"></script>
+
+    <!-- 2. Panggil logika aplikasi (dashboard.js atau index.js jika ada) -->
+    <!-- Di sini kita asumsikan dashboard.js menangani tombol #btnSimpan -->
+    <script type="module" src="js/dashboard.js"></script>
+
+    <!-- 3. Panggil map jika halaman ini menampilkan peta -->
+    <script type="module" src="js/map.js"></script>
+
+</body>
+</html>
